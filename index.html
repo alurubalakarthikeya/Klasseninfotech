@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html>
+<title>Klassen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.5">
+<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" type="image/x-icon" href="logo.jpg" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,100;1,300&display=swap" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  text-align: justify;
+  transition: 0.8s ease-out;
+  scroll-behavior: smooth;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="logo.jpg" style="height: 35px; width: 35px;"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#skills" class="w3-bar-item w3-button"><i class="fa fa-code"></i> OUR SKILLS</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-users"></i> OUR TEAM</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-book"></i> ABOUT US</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-phone"></i> CONTACT US</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">OUR SKILLS</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">OUR TEAM</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-black w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small w3-center">Welcome!</span><br>
+    <span class=" w3-xxlarge w3-hide-large w3-hide-medium w3-center">Welcome!</span><br>
+    <span class="w3-large">Start working smart with klassen infotech ,save your valuable time.  </span><br><br>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Know more</a></p>
+  </div> 
+</header>
+
+<!-- Skills Section -->
+<div id="skills" class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3><i class="fa fa-code"></i> Our Skills.</h3>
+      <p> We provide IT services. We design, develope and deliver you websites and softwares. We also work on Cyber security,  </p>
+      <p>Lorem ipsum dolor sit amet, consecte
+      tur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+    </div><br>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-globe w3-margin-right"></i>Web design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div><br>
+      <p class="w3-wide"><i class="fa fa-dollar w3-margin-right"></i>Digital Marketing</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:82%">82%</div>
+      </div><br>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We know designing.</h3>
+      <p>Get a sight attractive design from our team and win the hearts of your clients by just a <a href="#contact" style="color: blue;">click</a> </p><br>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th">&nbsp;</i> View Our Works</a></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Team Section -->
+<div class="w3-black w3-container" style="padding:128px 36px" id="team">
+  <h3 class="w3-center"><i class="fa fa-users"></i> OUR TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="" alt="Vaishnav" style="width:100%">
+        <div class="w3-container">
+          <h3>Vaishnav Raut</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Mr. Vaishnav is the CEO and Founder of the company. Which was started in mid 2021</p><br>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div><br>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Karthikeya.png" alt="Aluru" style="width:100%">
+        <div class="w3-container">
+          <h3>Aluru Karthikeya</h3>
+          <p class="w3-opacity">Co-Founder and CTO</p>
+          <p>Mr. Karthikeya is the Co-founder, CTO and the Designer for Klassen Infotech </p><br>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="" alt="unknown" style="width:100%">
+        <div class="w3-container">
+          <h3>Coming soon</h3>
+          <p class="w3-opacity">SDE</p>
+          <p>Will be updated soon</p><br>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="" alt="unknown" style="width:100%">
+        <div class="w3-container">
+          <h3>Coming soon</h3>
+          <p class="w3-opacity">Art Designer</p>
+          <p>will be updated soon </p><br>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- About Section -->
+<div class="w3-white w3-container" style="padding:128px 6px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY  <i class="fa fa-building"></i></h3>
+  <p class="w3-center w3-large">Know about our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-laptop w3-margin-bottom w3-jumbo w3-center w3-hover-opacity"></i>
+      <p class="w3-large">Responsive</p>
+      <p> Make an amazing and responsive website which looks perfect for all devices. We design responsive sites!</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-support w3-margin-bottom w3-jumbo w3-hover-opacity"></i>
+      <p class="w3-large">Support</p>
+      <p>Get the true support from us. We can help you out with our fast response and work. </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo w3-hover-opacity"></i>
+      <p class="w3-large">Passion</p>
+      <p>We have true passionate designers, developers and testers to make your work more efficient and </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-pencil w3-margin-bottom w3-jumbo w3-hover-opacity"></i>
+      <p class="w3-large">Design</p>
+      <p>We design your websites and softwares in a way you can't even imagine. Make your user experience much better.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-black" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT US</h3>
+  <p class="w3-center w3-large">Let's get acquainted. Ask your questions:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map fa-fw w3-xxmedium w3-margin-right"></i> Amravati, Maharashtra, India</p>
+    <p><i class="fa fa-phone fa-fw w3-xxmedium w3-margin-right"></i> Phone: coming soon </p>
+    <p><i class="fa fa-google fa-fw w3-xxmedium w3-margin-right"> </i> Mail: klassen.infotech@gmail.com</p>
+    <br>
+    <form action="" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p><br>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p><br>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p><br>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p><br>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> MESSAGE US
+        </button>
+      </p><br>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-white w3-padding-64">
+  <a href="#home" class="w3-button w3-black"><i class="fa fa-arrow-up w3-margin-right"></i>Back to top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.linkedin.com/company/klassen-infotech/" class="mr-8"><i class="fa fa-linkedin w3-hover-opacity "></i></a>
+    <a href="https://www.facebook.com/people/Klassen-Infotech/100086440578190/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/klassen_infotech/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/klasseninfotech"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    
+  </div>
+</footer>
+
+<script>
+// Toggle on for mobile
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close toggle
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
